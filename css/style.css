@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+/*
+font-family: Montserrat, sans-serif;
+*/
+
+/**/
+header *,footer *,#home *,#proj *:not(.slide-container *),#skills *{
+  transition:all 0.5s ease-in;
+  -webkit-transition:all 0.5s ease-in;
+}
+html,body{
+  position:relative;
+  z-index:-2;/*just for the underline*/
+}

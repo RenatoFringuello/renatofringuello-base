@@ -1,0 +1,10 @@
+header{
+    background:-webkit-linear-gradient(var(--ndColor), #0000);
+    display:flex;
+    justify-content:space-between;
+    padding:1rem var(--paddingLR) 1rem 10px;
+    position:fixed;
+    z-index:2;
+    width:calc(100% - var(--paddingLR));
+    align-items:center;
+}

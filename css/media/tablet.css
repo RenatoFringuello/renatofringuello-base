@@ -1,0 +1,40 @@
+@media screen and (min-width: 480px)  and (orientation: portrait) {
+    html{
+        font-size:150%;
+    }   
+    button{
+        width:250px;
+    }
+
+    /*slik slider*/
+    .slide-container{
+        margin-top:60px;
+    }
+    .card{
+        height:65vh;
+    }
+    .skillSec img{
+        height:50px;
+        margin:20px;
+    }
+    .skillSec img.php{
+        height: 40px;
+    }
+
+    /*menu*/
+    .slider:before {
+        height: 45px;
+        width: 45px;
+        left: 6px;
+        bottom: 6px;
+    }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(39px);
+        -ms-transform: translateX(39px);
+        transform: translateX(39px);
+    }
+    .social {
+        width: 45px;
+        height:45px;
+    }
+}

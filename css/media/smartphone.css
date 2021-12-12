@@ -1,0 +1,8 @@
+@media screen and (max-width: 479px)  and (orientation: portrait) {
+    .wrapper { 
+        margin:0 15px;
+    }
+    .card{
+        height:55vh;
+    }
+}

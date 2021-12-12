@@ -1,0 +1,22 @@
+:root{
+  --stColor : #dddf;
+  --ndColor : #222f;
+  --ndColor2 : #444f; /*scrollbar track*/
+  --rdColor : #09F0AB;
+  --rdColor2 : #009363;
+  --opacity : 0.7;
+  --paddingLR : 8vw;
+}
+
+body *::selection{
+  background:var(--rdColor);
+  color:var(--ndColor);
+}
+div img::selection, .link::selection, button h4::selection{
+  background:none;
+  color: var(--stColor);
+}
+
+.skillSec img{
+  -webkit-filter:drop-shadow(2px 2px 3px #0006) hue-rotate(166deg) brightness(2.5);
+}

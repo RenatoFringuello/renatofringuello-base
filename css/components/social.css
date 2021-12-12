@@ -1,0 +1,21 @@
+  .social {
+    width: 30px;
+    height:30px;
+    display: grid;
+    padding: 3px;
+    opacity: var(--opacity);
+    -webkit-opacity: var(--opacity);
+    -moz-opacity: var(--opacity);
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+  }
+  .social:hover{
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  .icon {
+    place-self: center;
+    width: 80%;
+    cursor:pointer;
+  }

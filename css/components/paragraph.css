@@ -1,0 +1,21 @@
+.text{
+    padding-bottom:2rem;
+}
+.textTitle{
+    margin-bottom:1rem;
+    text-transform:capitalize;
+    font-weight: 700;
+}
+.textSubtitle{
+    width:max-content;
+    letter-spacing:10px;
+    background:-webkit-linear-gradient(0deg,var(--rdColor),var(--rdColor2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    text-transform:uppercase;
+}
+.textContent{
+    line-height:1.2;
+    font-weight:400;
+    margin-bottom:2rem;
+}

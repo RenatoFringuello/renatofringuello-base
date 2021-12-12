@@ -1,0 +1,39 @@
+#home{
+    height:100vh;
+    padding-top:4rem;
+    display:flex;
+    justify-content:space-between;
+  }
+  .description,.profilePicture{
+    width:auto;height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .underlined-word{/*should be the container of the word to underline*/
+    position: relative;
+  }
+  .underline{
+    height: 3px;
+    position: absolute;
+    top: calc(100% + 3px);
+    background:-webkit-linear-gradient(45deg, var(--rdColor), var(--rdColor2));
+    animation: underline 5s ease-in-out infinite;
+    z-index:1;
+  }
+
+  .textSec, .buttonSec{
+    width:100%;
+    position:  relative;
+  }
+  .buttonSec{
+    font-weight: 400;
+    display:flex;
+    padding:4vw 0;
+  }
+
+  .profilePicture img{
+    height:70%;
+    -webkit-filter:drop-shadow(4px 4px 4px #0006);
+  }

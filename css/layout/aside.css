@@ -1,0 +1,20 @@
+.walkthrough{
+    width: var(--paddingLR);
+    height:200vh;
+    position: relative;
+    border: 1x solid;
+    top: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:column;
+}
+.vertical-line{
+    height: 30vh;
+    border: 1px solid;
+}
+.step{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}

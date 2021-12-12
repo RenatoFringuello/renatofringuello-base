@@ -1,0 +1,18 @@
+  .link{
+    position: relative;
+    font-weight: 700;
+  }
+  .link:hover .linkBar, .logo-container:hover .linkBar{
+    width:100%;
+    cursor: pointer;
+  }
+  .linkBar{
+    cursor:pointer;
+    width:50%; height:50%; 
+    position:absolute;
+    z-index:-1;
+    top:60%;left:0px;
+    background:-webkit-linear-gradient(0deg, var(--rdColor), var(--rdColor2));
+    transition: width 0.5s ease-out;
+    -webkit-transition: width 0.5s ease-out;
+  }

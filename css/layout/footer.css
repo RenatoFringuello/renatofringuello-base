@@ -1,0 +1,18 @@
+footer{
+    background:var(--ndColor);
+    display:flex;
+    justify-content:space-between;
+    padding:1rem var(--paddingLR) 1rem 0;
+    position:fixed;
+    z-index:2;
+    width:calc(100% - var(--paddingLR));
+    bottom:0;
+    background:#0000;
+    align-items:center;
+}
+
+.socialSec{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }

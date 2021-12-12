@@ -1,0 +1,16 @@
+  .navBtn{
+    position:relative;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    height:calc(clamp(1.5rem, 0.3125rem + 4.1667vw, 2.5rem) / 1.5);
+    width:clamp(1.5rem, 0.3125rem + 4.1667vw, 2.5rem);;
+  }
+  .navBtn .line{
+    width:100%;
+    border:1px solid var(--stColor);  
+    background:var(--stColor);
+    cursor:pointer;
+  }

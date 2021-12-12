@@ -1,0 +1,33 @@
+/*CHROME*/
+::-webkit-scrollbar,::-webkit-scrollbar-track {
+    width: 10px;
+}
+::-webkit-scrollbar-button, ::-webkit-scrollbar-corner {
+    display: none;
+}
+::-webkit-scrollbar-button, ::-webkit-scrollbar-corner {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(var(--rdColor) 0%,var(--rdColor2) 50%,var(--stColor) 50%);
+    -webkit-box-shadow: 0 3px 3px rgb(0,0,0,0.36);
+    -moz-box-shadow: 0 3px 3px rgb(0,0,0,0.36);
+    box-shadow: 0 3px 3px rgb(0,0,0,0.36);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-image: -webkit-linear-gradient(var(--rdColor) 0%,var(--rdColor2) 100%);
+}
+::-webkit-scrollbar-thumb:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+::-webkit-scrollbar-track {
+    background: var(--ndColor2);
+}
+
+/*MOZILLA*/
+html, body{
+    scrollbar-width:thin;
+    scrollbar-color: var(--rdColor) var(--ndColor);
+}

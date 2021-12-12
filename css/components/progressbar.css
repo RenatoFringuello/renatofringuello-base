@@ -1,0 +1,6 @@
+.progressBar{
+    position: fixed;
+    z-index: 999;
+    height: 5px;
+    background:-webkit-linear-gradient(0deg, var(--rdColor), var(--rdColor2));
+  }

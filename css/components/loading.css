@@ -1,0 +1,66 @@
+  /*logo*/
+  .logo-container{
+    height:calc(clamp(1.5rem, 0.3125rem + 4.1667vw, 2.5rem) / 1.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+  }
+  
+  .logo{
+    font-weight:700;
+    margin-left:30px;
+  }
+  .logo .linkBar{
+    width:0;
+  }
+
+  /*loading page*/
+  .loader-wrapper{
+    height:100vh;
+    width:100%;
+    display: flex;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background:var(--ndColor);
+    z-index:3;
+  }
+  .loader-container{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+  #brand{
+    width: clamp(1.5rem, 0.3125rem + 4.1667vw, 2.5rem);
+  }
+  #brand .lt{
+    width: clamp(1.5rem, 0.3125rem + 4.1667vw, 4rem);
+  }
+  .lt{
+    position:absolute;
+    width: 10rem;
+  }
+  #brand h3,#brand .loader{
+    font-weight:700;
+  }
+  #ltNd{
+    transform:rotateZ(180deg);
+  }
+  .loader{
+    background:-webkit-linear-gradient(45deg,var(--rdColor),var(--rdColor2));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    position:absolute;
+  }
+  .loader:not(#brand .loader){
+    position:absolute;
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0deg);
+    -webkit-transform-style: preserve-3d;
+    animation: loading 1s ease-in-out infinite;
+  }

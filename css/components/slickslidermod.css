@@ -1,0 +1,68 @@
+  .slide-container {
+    width:100%;
+  }
+  .wrapper { 
+    margin:0 30px;
+  }
+  .card 
+  {
+    width: 100%; 
+    height:60vh;
+    display: inline-block; 
+    margin: auto;
+    text-align: center;
+    padding:8px;
+    background:-webkit-linear-gradient(0deg,var(--rdColor),var(--rdColor2));
+  }
+  .cardImage 
+  { 
+    position: relative;
+    width:100%;height:100%; 
+    display:flex; 
+    align-items:center;
+    justify-content:center;
+  }
+  .bgBlend{
+    background: -webkit-linear-gradient(0deg,var(--rdColor),var(--rdColor2)); 
+    width: 100%;height:100%; 
+    position: absolute;
+    mix-blend-mode:hue; 
+    transition:all 0.5s ease-out; 
+    -webkit-opacity:1;-ms-opacity:1;-moz-opacity:1;opacity:1;
+  }
+  .bgBlend:hover{
+    -webkit-opacity:0;-ms-opacity:0;-moz-opacity:0;opacity:0;
+  }
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+  /*cards*/
+  .cardEmpty .bgBlend{
+    background:#0000;
+  }
+  .cardIllustration{
+    background: url('http://renatofringuello.000webhostapp.com/res/img/project/illustration/1.png') no-repeat;
+    background-size:cover;
+    background-position:center;
+  }
+  .cardMockups {
+    background: url('http://renatofringuello.000webhostapp.com/res/img/project/mockup/1.jpg')no-repeat; 
+    background-size:cover;
+    background-position:center;
+  }
+  .cardGames { 
+    background: url('http://renatofringuello.000webhostapp.com/res/img/project/game/1/2.jpg')no-repeat; 
+    background-size:cover;
+    background-position:center;
+  }
+  .cardWebsites {
+    background: url('http://renatofringuello.000webhostapp.com/res/img/project/web/000.jpg')no-repeat; 
+    background-size:cover;
+    background-position:center;
+  }
