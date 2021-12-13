@@ -2,10 +2,10 @@
 function setTheme(){
   //set toggle theme
   if($("input").is(':checked')){
-    $("#linkTheme").attr("href", "./css/utils/light-theme.css");
+    $("#linkTheme").attr("href", "https://renatofringuello.github.io/renatofringuello-base/css/utils/light-theme.css");
   }
   else{
-    $("#linkTheme").attr("href", "./css/utils/dark-theme.css");
+    $("#linkTheme").attr("href", "https://renatofringuello.github.io/renatofringuello-base/css/utils/dark-theme.css");
   }
 }
 
