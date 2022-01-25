@@ -107,7 +107,7 @@ $(document).ready(function() {
           {
             "height":"auto",
             "display":"flex",
-            "background" : "-webkit-linear-gradient(var(--ndColor), #0000)"
+            "background" : "-webkit-linear-gradient(var(--ndColor), var(--ndColorGr))"
           }
         );
         //set html to scrollable
@@ -137,7 +137,7 @@ $(document).ready(function() {
     $("header").css(
       {
         "height":"auto",
-        "background" : "-webkit-linear-gradient(var(--ndColor), #0000)"
+        "background" : "-webkit-linear-gradient(var(--ndColor), var(--ndColorGr))"
       }
     );
   });
