@@ -10,5 +10,9 @@ header *,footer *,#home *,#proj *:not(.slide-container *),#skills *{
 }
 html,body{
   position:relative;
-  z-index:-2;/*just for the underline*/
+  z-index:-2;
+}
+
+.hidden, .hidden *{
+  visibility: hidden;
 }
