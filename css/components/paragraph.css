@@ -20,7 +20,7 @@
     margin-bottom: 1.5rem;
     font-weight:400;
 }
-.textContent img{
+.textContent div > img{
     transform: scale(2);
     margin: 30px;
 }
