@@ -1,7 +1,6 @@
 .text{
     padding-bottom:2rem;
     width: 100%;
-    margin-bottom: 2rem;
 }
 .textSubtitle{
     margin-bottom:1rem;
@@ -18,5 +17,6 @@
 }
 .textContent{
     line-height:1.2;
+    margin-bottom: 2rem;
     font-weight:400;
 }
