@@ -9,10 +9,15 @@ function setTheme(){
   }
 }
 
+var age;
 function loadAge(d){
-  birthdate = new Date('1999-07-09T00:00:00');
-  age = Math.floor(this.d - birthdate);
-  console.log(age);
+  var birthDate = new Date('1999-07-09T00:00:00');
+  age = d.getFullYear() - birthDate.getFullYear();
+  var m = d.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && d.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
 }
 
 //doc READY
