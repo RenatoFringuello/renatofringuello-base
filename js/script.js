@@ -9,6 +9,12 @@ function setTheme(){
   }
 }
 
+function loadAge(d){
+  birthdate = new Date('1999-07-09T00:00:00');
+  age = Math.floor(this.d - birthdate);
+  console.log(age);
+}
+
 //doc READY
 $(document).ready(function() {
   //slick carousel
@@ -153,6 +159,10 @@ $(window).on("load", function(){
   if((d.getMonth() >= 5 && d.getMonth() < 9 && d.getHours() < 20 && d.getHours() >= 8) || ((d.getMonth() >= 9 || d.getMonth() < 5) && d.getHours() < 18 && d.getHours() >= 6)){
     $("input").attr('checked','checked');
   } 
+
+  //load age
+  loadAge(d);
+  
   setTheme();
   setTimeout(function(){
     $(".loader-wrapper").fadeOut('slow');
