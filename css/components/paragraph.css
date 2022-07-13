@@ -21,6 +21,6 @@
     font-weight:400;
 }
 .textContent div > img{
-    transform: scale(2);
+    height: 50px;
     margin: 30px;
 }
