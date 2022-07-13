@@ -10,8 +10,8 @@ function setTheme(){
 }
 
 function calcAge(){
-  var d = new Date();
-  var birthDate = new Date('1999-07-09T00:00:00');
+  var d = new Date(startDate);
+  var birthDate = new Date(startDate);
   var age = d.getFullYear() - birthDate.getFullYear();
   var m = d.getMonth() - birthDate.getMonth();
   if (m < 0 || (m === 0 && d.getDate() < birthDate.getDate())) {
@@ -159,7 +159,9 @@ $(document).ready(function() {
   });
 
   //setAge
-  $("#age").text(calcAge());
+  $("#age").text(calcAge('1999-07-09T00:00:00'));
+  //set copyright year
+  $("#copyyr").text(new Date().getFullYear());
 });
 
 //window LOAD
