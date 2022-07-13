@@ -9,15 +9,15 @@ function setTheme(){
   }
 }
 
-var age;
-function loadAge(d){
+function calcAge(){
+  var d = new Date();
   var birthDate = new Date('1999-07-09T00:00:00');
-  var a = d.getFullYear() - birthDate.getFullYear();
+  var age = d.getFullYear() - birthDate.getFullYear();
   var m = d.getMonth() - birthDate.getMonth();
   if (m < 0 || (m === 0 && d.getDate() < birthDate.getDate())) {
-    a--;
+    age--;
   }
-  return a;
+  return age;
 }
 
 //doc READY
@@ -159,7 +159,7 @@ $(document).ready(function() {
   });
 
   //setAge
-  $("#age").text(age);
+  $("#age").text(calcAge());
 });
 
 //window LOAD
@@ -169,10 +169,6 @@ $(window).on("load", function(){
   if((d.getMonth() >= 5 && d.getMonth() < 9 && d.getHours() < 20 && d.getHours() >= 8) || ((d.getMonth() >= 9 || d.getMonth() < 5) && d.getHours() < 18 && d.getHours() >= 6)){
     $("input").attr('checked','checked');
   } 
-
-  //load age
-  age = loadAge(d);
-  
   setTheme();
   setTimeout(function(){
     $(".loader-wrapper").fadeOut('slow');
