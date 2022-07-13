@@ -1,7 +1,4 @@
 @media only screen and (orientation:portrait){
-    /*h4{
-      font-size: clamp(0.8rem, 0.2750rem + 2.3333vw, 1.5rem);
-    }*/
     body{
       padding:0;
     }
@@ -94,6 +91,10 @@
       width:130px;
     }
 
+    .hint{
+      display: none;
+    }
+
     /*proj*/
     #proj{
       min-height: 100vh;
@@ -102,6 +103,10 @@
       margin-top:45px;
     }
 
+    /*about*/
+    .articles{
+      width: 100%;
+    }
 
     /*title*/
     .title{
