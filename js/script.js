@@ -17,7 +17,6 @@ function loadAge(d){
   if (m < 0 || (m === 0 && d.getDate() < birthDate.getDate())) {
     age--;
   }
-  return age;
 }
 
 //doc READY
@@ -58,6 +57,7 @@ $(document).ready(function() {
   var scroll = new SmoothScroll('a[href*="#"]');
   window.location.href = "#home";
 
+  //change theme input
   $("input").on("click",setTheme);
 
   //on scoll
@@ -128,6 +128,7 @@ $(document).ready(function() {
       isOpen = 0;
     }
   }
+
   //click links on portrait
   $(".link").on("click",function(){
     if(window.innerWidth < window.innerHeight){
@@ -155,6 +156,9 @@ $(document).ready(function() {
   $(".navBtn").on("click", function(){
     openNav();
   });
+
+  //setAge
+  $(".age").text(age);
 });
 
 //window LOAD
