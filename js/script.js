@@ -12,11 +12,12 @@ function setTheme(){
 var age;
 function loadAge(d){
   var birthDate = new Date('1999-07-09T00:00:00');
-  age = d.getFullYear() - birthDate.getFullYear();
+  var a = d.getFullYear() - birthDate.getFullYear();
   var m = d.getMonth() - birthDate.getMonth();
   if (m < 0 || (m === 0 && d.getDate() < birthDate.getDate())) {
-    age--;
+    a--;
   }
+  return a;
 }
 
 //doc READY
@@ -158,7 +159,7 @@ $(document).ready(function() {
   });
 
   //setAge
-  $(".age").text(age);
+  $("#age").text(age);
 });
 
 //window LOAD
@@ -170,7 +171,7 @@ $(window).on("load", function(){
   } 
 
   //load age
-  loadAge(d);
+  age = loadAge(d);
   
   setTheme();
   setTimeout(function(){
